@@ -5,78 +5,98 @@
 
 /* Селектор за типом */
 h1 {
-  color: green;                           /* колір шрифту */
-  background: #EEE;                       /* колір фону (16-ричний формат)*/
+  color: white;      /* колір шрифту */
+  font-size: 50pt;
+  background: #000080;                     /* колір фону (16-ричний формат)*/
+  text-align: center;
   font-family: "Courier New", monospace;  /* шрифт */
   height: 50px;                           /* висота елементу */
   width: 50%;                             /* ширина елементу */
-  border: solid black 5px;                /* стиль границі елементу */
+  border: solid black 3px;                /* стиль границі елементу */
   padding: 20px;                          /* відступ від границі до контенту */
   margin: 20px;                           /* відступ від границі до іншого елементу */
 }
+h3{
+  background: #4169e1;
+  color: yellow;
+  font-size: 20pt;
+  padding: 5px;
+  margin: 5px;
+  width: 97%;
 
+}
 /* Селектор за класом */
 .main {
-  color: yellow;
+  color: black;
 }
 
 /* Селектор за ідентифікатором */
 #hello {
-  color: green;
+  color: navy;
+  font-size: 25pt;
+
 }
 
 /* Селектор за атрибутом */
 [alt='placeholder'] {
-  border: solid red 5px;
+  border: solid royalblue 3px;
 }
 
 /* "Комбінований" селектор*/
 a.link[href*=wikipedia] {
-  background: green;
+  background: royalblue;
+  color: yellow;
 }
 
 /* Комбінатор “,” */
-p, h1 {
+.manyLines, h1, h3 {
   font-style: italic;
 }
 
 /* Комбінатор “ ” */
 .main a {
-  font-size: 32px;
+  font-size: 30px;
 }
 
 /* Комбінатор “>” */
 .main > a {
   text-transform: uppercase;
+  color: blue;
 }
 
 /* Комбінатор “~” */
-h1 ~ a {
-  background-color: coral;
+h3 ~ li {
+background-color: aliceblue;
+text-transform: capitalize;
+width: 98%;
 }
 
 /* Комбінатор “+” */
-p + a {
-  font-weight: 800;
+a.link[href*=wikipedia]+*{
+text-transform: lowercase;
 }
 
 /* Псевдокласи */
 a:visited {
-  background-color: red;
+  color: purple;
 }
 
 input[type='button']:hover {
-  background-color: blue;
+  background-color: deepskyblue;
+}
+input#scrollToBottom:hover , input#scrollToTop:hover  {
+  background-color: aqua;
 }
 
-li:first-child {
-  border-top: solid green 5px;
+
+li:nth-of-type(1){
+  border-top: solid navy 4px;
 }
 
 li:last-child {
-  border-bottom: solid green 5px;
+  border-bottom: solid navy 4px;
 }
 
 li:nth-of-type(3n + 1) {
-  background-color: grey
+  background-color: silver;
 }

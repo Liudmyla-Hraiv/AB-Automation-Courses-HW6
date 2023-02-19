@@ -9,22 +9,22 @@
 
 <body>
   <div class="main" id="main">
-    <a class="link" name="home" href="#">На головну</a>
+    <a class="link_top" id="link_top" name="home" href="#">На головну</a>
     <h1>Привіт, світ!</h1>
     <div>
       <p id="hello">
         Це моя <span class="uppercase">перша</span> сторінка!
         <a class="link" href="https://uk.wikipedia.org/wiki/HTML">HTML Wiki</a>
-        <a>Sample</a>
-        <img src="https://via.placeholder.com/150" alt="placeholder">
+        <a>Sample
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Wikipedia-logo-for-Ukraine.png" alt="placeholder" width="75" height="75" ></a>
       </p>
     </div>
-    <a class="link green button" name="css" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
+    <a class="link" name="css" href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS</a>
     <a class="link" href="https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors">CSS Selectors</a>
   </div>
   <div class="notes yellow">
     <ol id="notesList">
-      <h3>Нагадування</h1>
+      <h3>Нагадування</h3>
         <li>нагадування 1</li>
         <li>нагадування 2</li>
         <li>нагадування 3</li>
@@ -33,8 +33,9 @@
       <input type="text" name="noteInput" id="noteInput" value="" placeholder="Нагадування">
       <input type="button" name="addNote" id="addNote" value="Додати нагадування">
       <input type="button" name="loadNotes" id="loadNotes" class="button" value="Завантажити нагадування">
+
     </form>
-  </div>
+    <input type="button"  id="scrollToBottom" value="В кінець">
   <div class="manyLines">
     <p>
       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi quas impedit officia corrupti fugiat velit ullam
@@ -2559,9 +2560,8 @@
       sequi sapiente quaerat ad odit voluptatem enim. Cupiditate neque magnam iste inventore sed voluptas rerum
       perspiciatis.
     </p>
-    <button id="scrollToTop">На початок</a>
   </div>
+    <input type="button" href="#" id="scrollToTop" value="На початок">
 </body>
 <script type="text/javascript" src="script.js"></script>
-
 </html>

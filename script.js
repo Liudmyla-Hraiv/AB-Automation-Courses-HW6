@@ -31,3 +31,9 @@ document.getElementById('loadNotes').addEventListener('click', () => {
   request.open('GET', '_items.html', true);
   request.send();
 })
+document.getElementById('scrollToBottom').addEventListener('click', () => {
+ document.getElementById("scrollToTop").scrollIntoView();
+})
+document.getElementById('scrollToTop').addEventListener('click', () => {
+ document.getElementById("link_top").scrollIntoView();
+})
