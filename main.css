@@ -43,7 +43,7 @@ h3{
 }
 
 /* "Комбінований" селектор*/
-a.link[href*=wikipedia] {
+a[href*=wikipedia] {
   background: royalblue;
   color: yellow;
 }
@@ -72,7 +72,7 @@ width: 98%;
 }
 
 /* Комбінатор “+” */
-a.link[href*=wikipedia]+*{
+a[href*=wikipedia]+*{
 text-transform: lowercase;
 }
 
